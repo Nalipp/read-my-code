@@ -1,0 +1,16 @@
+set up heroku gemfile/environment
+add bootstrap
+change readme
+push
+
+create Pages controller
+test create about page
+create navbar
+push to github
+push to heroku
+
+test create user controller
+push
+
+html styling
+push
