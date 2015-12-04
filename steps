@@ -9,7 +9,7 @@ create navbar
 push to github
 push to heroku
 
-test create user controller
+create user controller (migration/model/test)
 push
 
 html styling

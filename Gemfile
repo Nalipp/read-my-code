@@ -11,10 +11,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  gem 'sqlite3',     '1.3.9'
-  gem 'byebug',      '3.4.0'
-  gem 'web-console', '2.0.0.beta3'
-  gem 'spring',      '1.1.3'
+  gem 'byebug'
+  gem 'sqlite3'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
 end
 
 group :production do
