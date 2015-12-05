@@ -21,3 +21,19 @@ push
 user
 model tests
 validations
+push
+
+articles branch
+
+articles controller/model
+routes
+migration
+validations
+pass tests
+push
+
+articles
+controller
+views
+push
+merge
