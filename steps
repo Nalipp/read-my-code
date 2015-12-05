@@ -12,7 +12,7 @@ push to heroku
 create user controller (migration/model/test)
 push
 
-user
+user _form, edit, index, new, show
 views
 shared errors
 html styling
