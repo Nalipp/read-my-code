@@ -1,58 +1,60 @@
-set up heroku gemfile/environment
-add bootstrap
-change readme
-push
+-set up heroku gemfile/environment
+-add bootstrap
+-change readme
+-push
 
-create Pages controller
-test create about page
-create navbar
-push to github
-push to heroku
+-create Pages controller
+-test create about page
+-create navbar
+-push to github
+-push to heroku
 
-create user controller (migration/model/test)
-push
+-create user controller (migration/model/test)
+-push
 
-user _form, edit, index, new, show
-views
-shared errors
-html styling
-push
+-user _form, edit, index, new, show
+-views
+-shared errors
+-html styling
+-push
 
-user
-model tests
-validations
-push
+-user
+-model tests
+-validations
+-push
 
-articles branch
+-articles branch
 
-articles controller/model
-routes
-migration
-validations
-pass tests
-push
+-articles controller/model
+-routes
+-migration
+-validations
+-pass tests
+-push
 
-articles
-controller
-push
+-articles
+-controller
+-push
 
-views
-push
+-views
+-push
 
-views
-edit/destroy links
-push
+-views
+-edit/destroy links
+-push
 
-user access
+x-page links tests
+
+admin
+
+add articles to user table
 link validation
-push
-merge
-
--b html
-html styling
-push
 
 gravatar
 paginate
-push
-merge
+
+
+
+article description
+
+github omniauth

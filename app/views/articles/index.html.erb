@@ -7,3 +7,7 @@
     <p><%= article.link %></p>
   </div>
 <% end %>
+
+<%# if logged_in? && (current_user == article.user || current_user.admin? ) %>
+  <%#= link_to "edit", edit_article_path(article) %>
+<%# end %>
