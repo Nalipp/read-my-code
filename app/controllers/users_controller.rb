@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users= User.all
+    @users = User.all
   end
 
   def new
@@ -12,10 +12,9 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
     if @user.update(user_params)
       flash[:success] = "User update was successful."
-      redirect_to root_path
+      redirect_to user_path(@user)
     else
       render 'edit'
     end

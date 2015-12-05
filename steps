@@ -34,6 +34,27 @@ push
 
 articles
 controller
+push
+
 views
+push
+
+views
+edit/destroy links
+push
+
+user access
+push
+
+link validation
+push
+merge
+
+-b html
+html styling
+push
+
+gravatar
+paginate
 push
 merge
