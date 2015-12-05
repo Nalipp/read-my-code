@@ -6,11 +6,11 @@
           <%= f.text_field :title, class: "form-control", placeholder: "title", autofocus: true %>
         </div>
         <div class="form-group">
-          <%= f.text_field :link, class: "form-control", placeholder: "link", autofocus: true %>
+          <%= f.text_field :link, class: "form-control", placeholder: "article link", autofocus: true %>
         </div>
         <div class="form-group">
           <div class="col-xs-12">
-            <h3><%= f.submit(@article.new_record? ? "sign up" : "update", class: "btn btn-primary btn-lg") %> [ <%= link_to "Cancel", root_path %> ]</h3>
+            <h3><%= f.submit(@article.new_record? ? "create" : "update", class: "btn btn-primary btn-lg") %> [ <%= link_to "Cancel", root_path %> ]</h3>
           </div>
         <% end %>
       </div>
