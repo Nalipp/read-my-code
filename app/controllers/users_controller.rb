@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = User.(page: params[:page], per_page: 100)
   end
 
   def new
