@@ -3,20 +3,26 @@
 
 <div class="container">
   <% @articles.each do |article| %>
-    <div class="well col-xs-8">
-      <div class="col-xs-1 grav_article">
+    <div class="well col-xs-12 col-md-8">
+      <div class="col-xs-3 col-md-1 grav-top-pad">
         <%= link_to gravatar_for(article.user), user_path(article.user) %>
+        <% if logged_in? && (current_user == article.user || current_user.admin? ) %>
+          <%= link_to edit_article_path(article) do %><i class="glyphicon glyphicon-edit icon-pad"></i>
+          <% end %>
+          <%= link_to article_path(article), method: :delete,
+                data: {confirm: "Are you sure you want to delete this article?"} do %>
+                <i class="glyphicon glyphicon-trash icon-pad"></i>
+          <% end %>
+        <% end %>
       </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-xs-9 col-md-11">
       <h4><%= link_to article.title, article_path(article) %></h4>
       <p><%= article.link %></p>
-    <% if logged_in? && (current_user == article.user || current_user.admin? ) %>
-      <%= link_to "edit", edit_article_path(article), class: "btn btn-xs btn-success" %>
-      <%= link_to "delete", article_path(article), method: :delete,
-          data: {confirm: "Are you sure you want to delete this article?"}, class: "btn btn-xs btn-danger" %>
-    <% end %>
+    </div>
   </div>
   <% end %>
 </div>
-<div align="center">
-<%= will_paginate %>
-</div>
+
+  <div align="center"><%= will_paginate %></div>
